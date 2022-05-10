@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AnastasijaLUKursi\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {}
+    "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {}
   },
   "projects": {
-    "C:\\AnastasijaLUKursi\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {
+    "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AnastasijaLUKursi\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
         "projectName": "Grupa4_TicTacToe",
-        "projectPath": "C:\\AnastasijaLUKursi\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
-        "packagesPath": "C:\\Users\\krjaf\\.nuget\\packages\\",
-        "outputPath": "C:\\AnastasijaLUKursi\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\obj\\",
+        "projectPath": "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
+        "packagesPath": "C:\\Users\\Ilze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krjaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ilze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
