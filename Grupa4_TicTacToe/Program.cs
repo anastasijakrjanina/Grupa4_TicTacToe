@@ -29,3 +29,16 @@
 
 //kā saukt lauciņus:
 //A1 etc, 1-9, xrinda y kolonna
+
+
+using Grupa4_TicTacToe;
+string helloPlayer = StaticData.HelloPlayer;
+Console.WriteLine(helloPlayer);
+
+
+StaticData.GameRules();
+
+
+
+StaticData.GoodLuck ();
+

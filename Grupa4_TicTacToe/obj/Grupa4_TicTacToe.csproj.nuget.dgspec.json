@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {}
+    "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {
+    "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
         "projectName": "Grupa4_TicTacToe",
-        "projectPath": "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
+        "projectPath": "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
         "packagesPath": "C:\\Users\\Ilze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ilze\\Source\\Repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\obj\\",
+        "outputPath": "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ilze\\AppData\\Roaming\\NuGet\\NuGet.Config",
