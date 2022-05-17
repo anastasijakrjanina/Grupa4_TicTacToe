@@ -32,13 +32,12 @@
 
 
 using Grupa4_TicTacToe;
-string helloPlayer = StaticData.HelloPlayer;
+string helloPlayer = GameIntro.HelloPlayer;
 Console.WriteLine(helloPlayer);
 
-
-StaticData.GameRules();
-
+GameIntro.GameRules();
 
 
-StaticData.GoodLuck ();
+GameIntro.GoodLuck ();
 
+Players players =new Players();

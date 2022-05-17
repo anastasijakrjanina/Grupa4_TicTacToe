@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Grupa4_TicTacToe
 {
-    internal class StaticData
+    internal class GameIntro
     {
         public static string HelloPlayer = "Hello, let's start the game!";
 
