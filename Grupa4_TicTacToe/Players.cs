@@ -74,6 +74,25 @@ namespace Grupa4_TicTacToe
 
 
         }
-    }
+
+        public string Player3(string name)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Who is player 3. Enter your name:");
+            Console.WriteLine();
+            string name1 = Console.ReadLine();
+
+        
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                {
+                    Console.WriteLine($"Your name is {name}.");
+                }
+            }
+
+            return name;
+            }
+        
+    
 }
 
