@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MyWeL+gqyAAmPnZ2kwT+eB2QmS7sEkDS01aHmqsOn8efWBuMccK8nptale+Rm57hGYNUrZwAyry2mn4LdHcJPQ==",
+  "dgSpecHash": "IB0swlK2TOYf+mr0A8/YiSDHgx7JRZ6ZW3E7urW5ss/DghxsnAm0OGxFzgt1nRDy6/gnFXoMJuF29driOQZdgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe\\Grupa4_TicTacToe.csproj",
+  "projectFilePath": "C:\\Users\\Ilze\\source\\repos\\Grupa4_TicTacToe\\Grupa4_TicTacToe.Tests\\Grupa4_TicTacToe.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ilze\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Ilze\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\Ilze\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Ilze\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",
@@ -93,7 +94,8 @@
     "C:\\Users\\Ilze\\.nuget\\packages\\xunit.assert\\2.4.1\\xunit.assert.2.4.1.nupkg.sha512",
     "C:\\Users\\Ilze\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Ilze\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
-    "C:\\Users\\Ilze\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512"
+    "C:\\Users\\Ilze\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
+    "C:\\Users\\Ilze\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }
