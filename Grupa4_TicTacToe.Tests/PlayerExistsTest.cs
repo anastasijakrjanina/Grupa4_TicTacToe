@@ -18,36 +18,42 @@ namespace Grupa4_TicTacToe.Tests
         public void GetPlayerString_WhenPlayers1NameEntered_ThenReturnsYes()
 
         {
-            
-                var players = new Grupa4_TicTacToe.Players();
-                string response = Players.IsPlayer1NameExist(1);
 
-                Assert.Equal("True", response);
+            var players = new Grupa4_TicTacToe.Players();
 
-           
+            string playerName = "Dace";
+            bool response = Players.IsPlayer1NameExist(playerName);
+
+            Assert.True(response);
+
+
 
         }
+
+
+
+        [Theory]
+        [InlineData("Dace")]
+        [InlineData("  ")]
+        [InlineData("")]
     
 
-        [Fact]
-
-        public void GetPlayerString_WhenPlayers2NameEntered_ThenReturnsYes()
+        public void GetPlayerString_WhenPlayers2NameEntered_ThenReturnsYes(string playerName)
 
         {
 
-            string response = Players.IsPlayer2NameExist(2);
 
+            var players = new Grupa4_TicTacToe.Players();
+  
 
+            bool response = Players.IsPlayer2NameExist(playerName);
 
-            Assert.Equal("True", response);
-
+            Assert.True(response);
 
 
         }
 
-        //[Theory]
-        //[InlineData()]
-        //[InlineData()]
+       
 
     }
 }

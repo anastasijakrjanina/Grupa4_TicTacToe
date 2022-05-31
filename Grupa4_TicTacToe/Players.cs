@@ -19,38 +19,38 @@ namespace Grupa4_TicTacToe
         }
 
         //vai 1 spēlētājs eksistē  ?
-        public static string IsPlayer1NameExist(string Person1)
+        public bool GetIsNameentered()
         {
-            
-            bool check = string.IsNullOrWhiteSpace(Person1);
+            return !string.IsNullOrWhiteSpace(Person1);
+        }
 
-            
+        //vai 1 spēlētājs eksistē  ?
+        public static bool IsPlayer1NameExist(string Person1)
+        {
 
-           if ( !check)
-            {
-                return "True";
-            }
+            return !string.IsNullOrWhiteSpace(Person1);
 
-          
-           return "False";
+            // bool check = string.IsNullOrWhiteSpace(Person1);
+
+
+
+            //if ( !check)
+            // {
+            //     return "True";
+            // }
+
+
+            //return "False";
 
         }
 
 
+        public string Person2 { get; set; }
         //vai 2 spēlētājs eksistē  ?
-        public static string IsPlayer2NameExist(int num)
+        public static bool IsPlayer2NameExist(string Person2)
         {
-            
-            if (num % 2 == 0 )
-            {
-                return "True";
-            }
-
-
-            return num.ToString();
-
+            return !string.IsNullOrWhiteSpace(Person2);
         }
-
         //spēli sāk spēlētājs ar simbolu X
 
 
