@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,93 +6,139 @@ using System.Threading.Tasks;
 
 namespace Grupa4_TicTacToe
 {
+       
     public class Players
     {
-        public string Player1
+        public static string Person1{ get; set; }
+
+        bool check = string.IsNullOrWhiteSpace(Person1);
+
+        public void Player1Name()
         {
-            get
+            Console.WriteLine($"{Person1}");
+        }
+
+        //vai 1 spēlētājs eksistē  ?
+        public static string IsPlayer1NameExist(string Person1)
+        {
+            
+            bool check = string.IsNullOrWhiteSpace(Person1);
+
+            
+
+           if ( !check)
             {
-                Console.WriteLine();
-                Console.WriteLine("Who is player 1. Enter your name:");
-                Console.WriteLine();
-                string player1 = Console.ReadLine();
-                if (string.IsNullOrWhiteSpace(player1))
-                {
-                    Console.WriteLine("You did not enter your name");
-                    Console.WriteLine("Try again.");
-
-                    player1 = Console.ReadLine();
-
-                    if (string.IsNullOrWhiteSpace(player1))
-                    {
-                        Console.WriteLine("No more tries");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Your name is {player1}.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine($"Your name is {player1}.");
-                }
-                return player1;
+                return "True";
             }
+
+          
+           return "False";
+
         }
 
 
-        public string Player2
+        //vai 2 spēlētājs eksistē  ?
+        public static string IsPlayer2NameExist(int num)
         {
-            get
+            
+            if (num % 2 == 0 )
             {
-                Console.WriteLine();
-                Console.WriteLine("Who is player 1. Enter your name:");
-                Console.WriteLine();
-                string player2 = Console.ReadLine();
+                return "True";
+            }
+
+
+            return num.ToString();
+
+        }
+
+        //spēli sāk spēlētājs ar simbolu X
+
+
+        //public static string StartsPlayerWithSymbolX(bool symbol)
+        //{
+        //    bool symbol = X
+        //    if 
+        //        {
+        //        return "Start game";
+        //    }
+        //    return "You are second";
+        //}
+
+        //public static bool IsPlayer1NameExist()
+        //{
+        //    if (IsPlayer1NameExist())
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
+        //public void Player1Name()
+        //{
+        //    Console.WriteLine();
+        //    Console.Write("Player 1, please enter Your name:");
+        //    Console.WriteLine();
+        //    string Player1 = Console.ReadLine();
+
+        //    if (string.IsNullOrWhiteSpace(Player1))
+        //    {
+        //        Console.WriteLine("You did not enter your name. Try again.");
+
+        //        Player1 = Console.ReadLine();
+
+        //        if (string.IsNullOrWhiteSpace(Player1))
+        //        {
+
+        //            Console.WriteLine("No more tries");
+
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine($"Your name is {Player1}.");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"Your name is {Player1}.");
+        //    }
+
+        //}
+
+
+        public void Player2Name()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Who is player 2. Enter your name:");
+            Console.WriteLine();
+            string player2 = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(player2))
+            {
+                Console.WriteLine("You did not enter your name");
+                Console.WriteLine("Try again.");
+
+                player2 = Console.ReadLine();
+
                 if (string.IsNullOrWhiteSpace(player2))
                 {
-                    Console.WriteLine("You did not enter your name");
-                    Console.WriteLine("Try again.");
-
-                    player2 = Console.ReadLine();
-
-                    if (string.IsNullOrWhiteSpace(player2))
-                    {
-                        Console.WriteLine("No more tries");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Your name is {player2}.");
-                    }
+                    Console.WriteLine("No more tries");
                 }
                 else
                 {
                     Console.WriteLine($"Your name is {player2}.");
                 }
-                return player2;
             }
-
+            else
+            {
+                Console.WriteLine($"Your name is {player2}.");
+            }
 
         }
 
-        public string Player3(string name)
-        {
-            Console.WriteLine();
-            Console.WriteLine("Who is player 3. Enter your name:");
-            Console.WriteLine();
-            string name1 = Console.ReadLine();
-
-        
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                {
-                    Console.WriteLine($"Your name is {name}.");
-                }
-            }
-
-            return name;
-            }
-        
-    
+    }
 }
+
+
+
+    
+    
+
 
