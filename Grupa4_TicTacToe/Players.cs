@@ -9,7 +9,7 @@ namespace Grupa4_TicTacToe
        
     public class Players
     {
-        public static string Person1{ get; set; }
+        public string Person1{ get; set; }
 
         bool check = string.IsNullOrWhiteSpace(Person1);
 
