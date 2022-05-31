@@ -8,12 +8,7 @@ namespace Grupa4_TicTacToe.Tests
 
 
         [Fact]
-        //public void GetPlayerString_WhenPlayers1NameEntered_ThenReturnsTrue()  
-        //{
-        //    bool response = Players.IsPlayer1NameExist();
-
-        //    Assert.Equal("true", response);
-        //}
+    
 
         public void GetPlayerString_WhenPlayers1NameEntered_ThenReturnsYes()
 

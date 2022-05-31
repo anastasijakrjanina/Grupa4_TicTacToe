@@ -51,8 +51,7 @@ players.Person1 = Console.ReadLine();
 if (string.IsNullOrWhiteSpace(players.Person1))
 {
     Console.WriteLine("You did not enter your name. Try again.");
-
-    //players.Player1Name = Console.ReadLine();
+    players.Person1 = Console.ReadLine();
 
     if (string.IsNullOrWhiteSpace(players.Person1))
     {
@@ -61,13 +60,41 @@ if (string.IsNullOrWhiteSpace(players.Person1))
     }
     else
     {
-        Console.WriteLine($"Your name is {players.Person1}.");
+        Console.WriteLine($"Hi {players.Person1}.");
     }
 }
 else
 {
-    Console.WriteLine($"Your name is {players.Person1}.");
+    Console.WriteLine($"Hi {players.Person1}.");
 }
 
 
-players.Player2Name();
+Console.WriteLine();
+Console.Write("Player 2, please enter Your name:");
+Console.WriteLine();
+players.Person2 = Console.ReadLine();
+
+if (string.IsNullOrWhiteSpace(players.Person2))
+{
+    Console.WriteLine("You did not enter your name. Try again.");
+
+    players.Person2 = Console.ReadLine();
+
+    if (string.IsNullOrWhiteSpace(players.Person2))
+    {
+        Console.WriteLine("No more tries");
+
+    }
+    else
+    {
+        Console.WriteLine($"Your name is {players.Person2}.");
+    }
+}
+else
+{
+    Console.WriteLine($"Your name is {players.Person2}.");
+}
+
+Console.WriteLine($"Player {players.Person1} is playing with {Symbol.X}");
+
+Console.WriteLine($"Player {players.Person2} is playing with {Symbol.O}");
