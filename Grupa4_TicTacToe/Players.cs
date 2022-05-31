@@ -11,7 +11,7 @@ namespace Grupa4_TicTacToe
     {
         public string Person1{ get; set; }
 
-        bool check = string.IsNullOrWhiteSpace(Person1);
+       
 
         public void Player1Name()
         {
