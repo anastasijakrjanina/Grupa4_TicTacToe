@@ -32,11 +32,19 @@
  
  
 using Grupa4_TicTacToe;
+
+//Welcome screen added
+Console.Clear();
+GameIntro.Welcome();
+Thread.Sleep(5000);
+Console.Clear();
+
+
 string helloPlayer = GameIntro.HelloPlayer;
 Console.WriteLine(helloPlayer);
- 
+
+
 GameIntro.GameRules();
- 
  
 GameIntro.GoodLuck();
 
@@ -46,8 +54,10 @@ player1.GetPlayerName(); //izsaucam f-ciju GetPlayerName
 HumanPlayer player2 = new HumanPlayer();
 player2.GetPlayerName();
 
+Thread.Sleep(2000);
+Console.Clear();
 
- 
+
 Console.WriteLine($"Player {player1.Name} is playing with {Symbol.X}");
  
 Console.WriteLine($"Player {player2.Name} is playing with {Symbol.O}");
@@ -58,25 +68,23 @@ Console.WriteLine($"Player {player2.Name} is playing with {Symbol.O}");
 //Need to add different conditions, and make a loop and maybe move to a separate class
  
 string[] arr = new string[9] { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-Board.ShowBoard(arr);
-//Board1
 
+//Board1
+Board.ShowBoard(arr);
  
 Console.WriteLine($"Enter your value from 1 to 9: {player1.Name}");
 int addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "X";
 Console.Clear();
 
+//Board2
 Board.ShowBoard(arr);
 
-
-//Board2
-
- 
 Console.WriteLine($"Enter your value from 1 to 9: {player2.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "O";
 Console.Clear();
+
 //Board3
 Board.ShowBoard(arr);
 
@@ -85,51 +93,48 @@ addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "X";
 Console.Clear();
 
+//Board4
 Board.ShowBoard(arr);
 
-//Board4
- 
 Console.WriteLine($"Enter your value from 1 to 9: {player2.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "O";
 Console.Clear();
 
-Board.ShowBoard(arr);
 //Board5
+Board.ShowBoard(arr);
  
 Console.WriteLine($"Enter your value from 1 to 9: {player1.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "X";
 Console.Clear();
 
-Board.ShowBoard(arr);
 //Board6
- 
+Board.ShowBoard(arr);
+
 Console.WriteLine($"Enter your value from 1 to 9: {player2.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "O";
 Console.Clear();
-
-Board.ShowBoard(arr);
 
 //Board7
+Board.ShowBoard(arr);
  
 Console.WriteLine($"Enter your value from 1 to 9: {player1.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "X";
 Console.Clear();
 
+//Board8
 Board.ShowBoard(arr);
 
-//Board8
- 
 Console.WriteLine($"Enter your value from 1 to 9: {player2.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
 arr[addedSymbol - 1] = "O";
 Console.Clear();
 
-Board.ShowBoard(arr);
 //Board9
+Board.ShowBoard(arr);
  
 Console.WriteLine($"Enter your value from 1 to 9: {player1.Name}");
 addedSymbol = int.Parse(Console.ReadLine());
@@ -139,26 +144,91 @@ Console.Clear();
 /// Number is taken check needs to be added!!!!
 
 
-if (arr[0] == arr[1] && arr[1] == arr[2])
+if (arr[0] == arr[1] && arr[1] == arr[2] && arr[2] == "X")
 {
     Console.WriteLine($"Congratulations {player1.Name}!");
     Console.WriteLine("You WON this game!");
 }
-else if (arr[3] == arr[4] && arr[4] == arr[5])
+else if (arr[3] == arr[4] && arr[4] == arr[5] && arr[5] =="X")
 {
     Console.WriteLine($"Congratulations {player1.Name}!");
     Console.WriteLine("You WON this game!");
- 
 }
- 
-else if (arr[6] == arr[7] && arr[7] == arr[8])
+else if (arr[6] == arr[7] && arr[7] == arr[8] && arr[8] == "X")
 {
     Console.WriteLine($"Congratulations {player1.Name}!");
     Console.WriteLine("You WON this game!");
- 
 }
-else Console.WriteLine($"{player1.Name} YOU LOST THIS GAME!");
+else if (arr[0] == arr[3] && arr[3] == arr[6] && arr[6] == "X")
+{
+    Console.WriteLine($"Congratulations {player1.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[1] == arr[4] && arr[4] == arr[7] && arr[7] == "X")
+{
+    Console.WriteLine($"Congratulations {player1.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[2] == arr[5] && arr[5] == arr[8] && arr[8] == "X")
+{
+    Console.WriteLine($"Congratulations {player1.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[0] == arr[4] && arr[4] == arr[8] && arr[8] == "X")
+{
+    Console.WriteLine($"Congratulations {player1.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[2] == arr[4] && arr[4] == arr[6] && arr[6] == "X")
+{
+    Console.WriteLine($"Congratulations {player1.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+//Player 2 check
+if (arr[0] == arr[1] && arr[1] == arr[2] && arr[2] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[3] == arr[4] && arr[4] == arr[5] && arr[5] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[6] == arr[7] && arr[7] == arr[8] && arr[8] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[0] == arr[3] && arr[3] == arr[6] && arr[6] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[1] == arr[4] && arr[4] == arr[7] && arr[7] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[2] == arr[5] && arr[5] == arr[8] && arr[8] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[0] == arr[4] && arr[4] == arr[8] && arr[8] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else if (arr[2] == arr[4] && arr[4] == arr[6] && arr[6] == "O")
+{
+    Console.WriteLine($"Congratulations {player2.Name}!");
+    Console.WriteLine("You WON this game!");
+}
+else Console.WriteLine($"{player1.Name} and {player2.Name} YOU LOST THIS GAME!");
 //Console.Clear();
  
 //Board finished - addded 2022-06-06
+
+
 
