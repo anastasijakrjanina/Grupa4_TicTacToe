@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Grupa4_TicTacToe
 {
        
-    public class Players
+    public class Players : ComputerPlayer
     {
         public string Person1{ get; set; }
 
